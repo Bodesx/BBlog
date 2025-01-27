@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import ExampleButton from "./ebutton";
 
+
 const FuzzyOverlayExample = () => {
   return (
     // NOTE: An overflow of hidden will be required on a wrapping
@@ -49,7 +50,7 @@ const ExampleContent = () => {
       </p>
       <div className="flex items-center justify-center gap-3">
          <ExampleButton >
-          Pricing
+        
         </ExampleButton>
         
       </div>

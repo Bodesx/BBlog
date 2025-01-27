@@ -1,10 +1,17 @@
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom";
+
 
 const ExampleButton = () => {
   return (
     <div className="grid min-h-[200px] place-content-center  p-4">
-      <DrawOutlineButton>Hover me</DrawOutlineButton>
+      <DrawOutlineButton>  <Link
+          to='/search'
+          className='text-xs sm:text-sm text-teal-500 font-bold hover:underline'
+        >
+          View all posts
+        </Link></DrawOutlineButton>
     </div>
   );
 };
