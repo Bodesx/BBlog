@@ -10,7 +10,7 @@ const ExampleButton = () => {
           to='/search'
           className='text-xs sm:text-sm text-teal-500 font-bold hover:underline'
         >
-          View all posts
+          View Posts
         </Link></DrawOutlineButton>
     </div>
   );
