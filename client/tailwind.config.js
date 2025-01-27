@@ -1,5 +1,8 @@
 /* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
+import flowbite from 'flowbite/plugin';
+import scrollbar from 'tailwind-scrollbar';
+
 export default {
   content: [
     './index.html',
@@ -18,11 +21,9 @@ export default {
         },
       },
     },
-    },
-    
-  
+  },
   plugins: [
-    require('flowbite/plugin'),
-    require('tailwind-scrollbar'),
+    flowbite,
+    scrollbar,
   ],
 };
