@@ -4,6 +4,9 @@ import Container from "../components/Container";
 import PLayout from "../components/P-layout"; // Importing PLayout
 import React from "react";
 import portraitImage from "../assets/replicate-prediction-p33fv0sjgdrj60chybqv7h2va4 (3).png";
+import EncryptButton from "../components/dcryptbutton";
+import Example from "../components/dcryptbutton";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -45,7 +48,11 @@ export default function About() {
                 I believe that technology has the power to change the world,
                 and I am excited to continue learning and exploring its infinite potential.
                 <em>Did</em> I mention I like space? My space, not that space; I am frightened by it. 
+               
               </p>
+                <EncryptButton>
+                      <Link to="/dcrypt">ppppp</Link>
+                    </EncryptButton>
             </div>
           </div>
         </div>
