@@ -16,6 +16,8 @@ body {
   height: 100vh;
 }
 
+
+
 .ql-editor {
   font-size: 1.05rem;
 }
@@ -53,7 +55,8 @@ body {
 
 
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
+    
 }
 
 h1>a>.icon.icon-link:before,

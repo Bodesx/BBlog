@@ -93,6 +93,14 @@ export default function Header() {
           >
             
             <Dropdown.Header>
+               <Button
+          className='w-12 h-10'
+          color='gray'
+          pill
+          onClick={() => dispatch(toggleTheme())}
+        >
+          {theme === 'light' ? <FaSun /> : <FaMoon />}
+        </Button>
               <span className='block text-sm'>@{currentUser.username}</span>
               <span className='block text-sm font-medium truncate'>
                 {currentUser.email}
@@ -109,6 +117,7 @@ export default function Header() {
             <Button gradientDuoTone='purpleToBlue' outline>
               Sign In
             </Button>
+            
           </Link>
         )}
         <Navbar.Toggle />
@@ -123,6 +132,7 @@ export default function Header() {
         <Navbar.Link active={path === '/projects'} as={'div'}>
           <Link to='/projects'>Projects</Link>
         </Navbar.Link>
+        
       </Navbar.Collapse>
     </Navbar>
   );
