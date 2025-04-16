@@ -3,6 +3,7 @@ import CallToEarth from '../components/CallToEarth';
 import { useEffect, useState } from 'react';
 import PostCard from '../components/PostCard';
 import FuzzyOverlayExample from '../components/fuxxyhero';
+import { RevealBento } from '../components/bento-grid';
 
 
 export default function Home() {
@@ -29,7 +30,8 @@ export default function Home() {
         */}   
       </div>
       <div className=''>
-        <FuzzyOverlayExample/>
+       
+        <RevealBento/>
       </div>
 
       <div className='max-w-6xl mx-auto p-9 flex flex-col gap-10 py-7'>
@@ -51,7 +53,7 @@ export default function Home() {
         )}
       </div>
       <div className='hidden sm:inline'>
-      <CallToEarth/>
+      
       </div>
     </div>
   );

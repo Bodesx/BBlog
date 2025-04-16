@@ -131,9 +131,15 @@ export default function Search() {
               id='category'
             >
               <option value='uncategorized'>Uncategorized</option>
-              <option value='reactjs'>React.js</option>
-              <option value='nextjs'>Next.js</option>
-              <option value='javascript'>JavaScript</option>
+              <option value='Technology'>Technology</option>
+              <option value='Gaming'>Gaming</option>
+              <option value='I.T/Coding'>I.T/Coding</option>
+              <option value='Music'>Music</option>
+              <option value='Science'>Science</option>
+              <option value='Food'>Food</option>
+              <option value='Style'>Style</option>
+              <option value='Art'>Art</option>
+              <option value='Love/Life'>Love/Life</option>
             </Select>
           </div>
           <Button type='submit' outline gradientDuoTone='purpleToPink'>
