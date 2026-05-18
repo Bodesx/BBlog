@@ -18,7 +18,7 @@ const postSchema = new mongoose.Schema(
 
   description: {
       type: String,
-      unique: true,
+      
     },
 
      quote: {
