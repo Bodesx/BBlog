@@ -87,7 +87,7 @@ export default function UpdatePost() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch(`/api/post/updatepost/${formData._id}/${currentUser._id}`, {
+      const res = await fetch(`/api/post/updatepost/${formData._id}/${currentUser.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
