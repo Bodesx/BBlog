@@ -89,20 +89,17 @@ export const updatepost = async (req, res, next) => {
     return next(errorHandler(403, 'You are not allowed to update this post'));
   }
 
-
-  
-
-  // Add validation for postId
   if (!req.params.postId) {
     return next(errorHandler(400, 'Post ID is required'));
   }
+
   try {
-    const updatedPost = await Post.findByIdAndUpdate(req.params.postId,
+    const updatedPost = await Post.findByIdAndUpdate(
       req.params.postId,
       {
         $set: {
           title: req.body.title,
-           description: req.body.description,
+          description: req.body.description,
           content: req.body.content,
           category: req.body.category,
           image: req.body.image,
@@ -110,7 +107,9 @@ export const updatepost = async (req, res, next) => {
       },
       { new: true }
     );
+
     res.status(200).json(updatedPost);
+
   } catch (error) {
     next(error);
   }
