@@ -7,6 +7,7 @@ import portraitImage from "../assets/replicate-prediction-p33fv0sjgdrj60chybqv7h
 import EncryptButton from "../components/dcryptbutton";
 import Example from "../components/dcryptbutton";
 import { Link } from "react-router-dom";
+import FallingText from "@/components/fallintext";
 
 
 export default function About() {
@@ -29,7 +30,21 @@ export default function About() {
            
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-              Turning Passion Into Purpose, Creativity and Technology Inspires Change 
+               
+        
+<FallingText
+  text={`Turning Passion Into Purpose, Creativity and Technology Inspires Change .`}
+  highlightWords={["Matrix", "Time", "components", "One"]}
+  highlightClass="highlighted"
+  trigger="hover"
+  backgroundColor="transparent"
+  wireframes={false}
+  gravity={0.26}
+  fontSize="2rem"
+  mouseConstraintStiffness={0.9}
+/>
+
+              
             </h1>
             
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">

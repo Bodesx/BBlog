@@ -274,4 +274,6 @@ void main() {
   return <div ref={containerRef} className="w-full h-full relative overflow-hidden [&_canvas]:block" />;
 };
 
+
+
 export default RippleGrid;

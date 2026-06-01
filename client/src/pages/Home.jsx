@@ -39,10 +39,19 @@ export default function Home() {
   hoverDuration={0.2}
 />
   </div>
+  
+
+
+   
+
+      
+  
+
 
 
 
 <div className='absolute inset-0 z-0' style={{position: 'relative', height: '500px', overflow: 'hidden'}}>
+
   <RippleGrid
     enableRainbow={false}
     gridColor="#5227FF"
@@ -56,10 +65,16 @@ export default function Home() {
     vignetteStrength={2}
     glowIntensity={0.1}
     gridRotation={0}
+    
 />
 
       </div>
-
+ <p className="text-center text-6xl font-black dark:text-white">
+        Navigating the Matrix
+      </p>
+      <p className="text-center dark:text-white">
+        its might be fuzzy now but it makes sense later 📺
+      </p>
 
 
         
