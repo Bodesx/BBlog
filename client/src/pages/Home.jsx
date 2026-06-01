@@ -41,7 +41,7 @@ export default function Home() {
   </div>
 <div className='absolute inset-40 z-80 flex  items-center justify-center    p-48 px-4 sm:px-6 md:px-10'>
 <FallingText
-  text={`Navigating the Matrix One Step at A Time.`}
+  text={`Navigating the Matrix .`}
   highlightWords={["Navigating", "Matrix", "Time", "components", "One"]}
   highlightClass="highlighted"
   trigger="hover"
