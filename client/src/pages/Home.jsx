@@ -39,15 +39,15 @@ export default function Home() {
   hoverDuration={0.2}
 />
   </div>
-<div className='absolute inset-40 z-80 flex  items-center justify-center    p-48 px-4 sm:px-6 md:px-10'>
+<div className='absolute inset-40  flex  items-center justify-center p-48 px-4 sm:px-6 md:px-10'>
 <FallingText
   text={`Navigating the Matrix .`}
-  highlightWords={["Navigating", "Matrix", "Time", "components", "One"]}
+  highlightWords={["Matrix", "Time", "components", "One"]}
   highlightClass="highlighted"
   trigger="hover"
   backgroundColor="transparent"
   wireframes={false}
-  gravity={0.56}
+  gravity={0.26}
   fontSize="2rem"
   mouseConstraintStiffness={0.9}
 />
