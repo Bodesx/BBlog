@@ -14,30 +14,40 @@ import UpdatePost from './pages/UpdatePost';
 import PostPage from './pages/PostPage';
 import ScrollToTop from './components/ScrollToTop';
 import Search from './pages/Search';
+import Gallery from './pages/Gallery';
+
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <Header />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/sign-in' element={<SignIn />} />
-        <Route path='/sign-up' element={<SignUp />} />
-        <Route path='/search' element={<Search />} />
-        <Route element={<PrivateRoute />}>
-          <Route path='/dashboard' element={<Dashboard />} />
-        </Route>
-        <Route element={<OnlyAdminPrivateRoute />}>
-          <Route path='/create-post' element={<CreatePost />} />
-          <Route path='/update-post/:postId' element={<UpdatePost />} />
-        </Route>
+    <div className="relative min-h-screen overflow-hidden">
+      
+      <BrowserRouter>
+        <ScrollToTop />
+        <Header />
 
-        <Route path='/projects' element={<Projects />} />
-        <Route path='/post/:postSlug' element={<PostPage />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/sign-in' element={<SignIn />} />
+          <Route path='/sign-up' element={<SignUp />} />
+          <Route path='/search' element={<Search />} />
+
+          <Route element={<PrivateRoute />}>
+            <Route path='/dashboard' element={<Dashboard />} />
+          </Route>
+
+          <Route element={<OnlyAdminPrivateRoute />}>
+            <Route path='/create-post' element={<CreatePost />} />
+            <Route path='/update-post/:postId' element={<UpdatePost />} />
+          </Route>
+
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/gallery' element={<Gallery />} />
+          <Route path='/post/:postSlug' element={<PostPage />} />
+        </Routes>
+
+        <Footer />
+      </BrowserRouter>
+    </div>
   );
 }
