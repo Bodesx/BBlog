@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import PostCard from '../components/PostCard';
 import TargetCursor from '../components/targetmouse';
 import RippleGrid from '@/components/runbg';
-import FallingText from '@/components/fallintext';
+
 
 
 
@@ -39,19 +39,7 @@ export default function Home() {
   hoverDuration={0.2}
 />
   </div>
-<div className='absolute inset-40  flex  items-center justify-center p-48 px-4 sm:px-6 md:px-10'>
-<FallingText
-  text={`Navigating the Matrix .`}
-  highlightWords={["Matrix", "Time", "components", "One"]}
-  highlightClass="highlighted"
-  trigger="hover"
-  backgroundColor="transparent"
-  wireframes={false}
-  gravity={0.26}
-  fontSize="2rem"
-  mouseConstraintStiffness={0.9}
-/>
-</div>
+
 
 
 <div className='absolute inset-0 z-0' style={{position: 'relative', height: '500px', overflow: 'hidden'}}>
