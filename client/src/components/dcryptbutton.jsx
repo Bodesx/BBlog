@@ -70,7 +70,7 @@ const EncryptButton = () => {
     >
       <div className="relative z-10 flex items-center gap-2">
         <FiLock />
-        <a href='https://bodesx.github.io/Bodesx/'>{text}</a>
+        <a href='https://bodesx.xo.je'>{text}</a>
       </div>
       <motion.span
         initial={{
